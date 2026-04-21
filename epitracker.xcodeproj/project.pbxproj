@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422822F97842C001980D1 /* epitrackerApp.swift */; };
+		ACA422852F97842C001980D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422842F97842C001980D1 /* ContentView.swift */; };
+		ACA422872F97842E001980D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA422862F97842E001980D1 /* Assets.xcassets */; };
+		ACA4228A2F97842E001980D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA422892F97842E001980D1 /* Preview Assets.xcassets */; };
+		ACA422942F97842F001980D1 /* epitrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422932F97842F001980D1 /* epitrackerTests.swift */; };
+		ACA4229E2F97842F001980D1 /* epitrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4229D2F97842F001980D1 /* epitrackerUITests.swift */; };
+		ACA422A02F97842F001980D1 /* epitrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4229F2F97842F001980D1 /* epitrackerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA422902F97842F001980D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA422772F97842C001980D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4227E2F97842C001980D1;
+			remoteInfo = epitracker;
+		};
+		ACA4229A2F97842F001980D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA422772F97842C001980D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4227E2F97842C001980D1;
+			remoteInfo = epitracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACA4227F2F97842C001980D1 /* epitracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epitracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA422822F97842C001980D1 /* epitrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerApp.swift; sourceTree = "<group>"; };
+		ACA422842F97842C001980D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACA422862F97842E001980D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA422892F97842E001980D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACA4228F2F97842F001980D1 /* epitrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = epitrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA422932F97842F001980D1 /* epitrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerTests.swift; sourceTree = "<group>"; };
+		ACA422992F97842F001980D1 /* epitrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = epitrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4229D2F97842F001980D1 /* epitrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerUITests.swift; sourceTree = "<group>"; };
+		ACA4229F2F97842F001980D1 /* epitrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA4227C2F97842C001980D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4228C2F97842F001980D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA422962F97842F001980D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACA422762F97842C001980D1 = {
+			isa = PBXGroup;
+			children = (
+				ACA422812F97842C001980D1 /* epitracker */,
+				ACA422922F97842F001980D1 /* epitrackerTests */,
+				ACA4229C2F97842F001980D1 /* epitrackerUITests */,
+				ACA422802F97842C001980D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA422802F97842C001980D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4227F2F97842C001980D1 /* epitracker.app */,
+				ACA4228F2F97842F001980D1 /* epitrackerTests.xctest */,
+				ACA422992F97842F001980D1 /* epitrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA422812F97842C001980D1 /* epitracker */ = {
+			isa = PBXGroup;
+			children = (
+				ACA422822F97842C001980D1 /* epitrackerApp.swift */,
+				ACA422842F97842C001980D1 /* ContentView.swift */,
+				ACA422862F97842E001980D1 /* Assets.xcassets */,
+				ACA422882F97842E001980D1 /* Preview Content */,
+			);
+			path = epitracker;
+			sourceTree = "<group>";
+		};
+		ACA422882F97842E001980D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACA422892F97842E001980D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACA422922F97842F001980D1 /* epitrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA422932F97842F001980D1 /* epitrackerTests.swift */,
+			);
+			path = epitrackerTests;
+			sourceTree = "<group>";
+		};
+		ACA4229C2F97842F001980D1 /* epitrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4229D2F97842F001980D1 /* epitrackerUITests.swift */,
+				ACA4229F2F97842F001980D1 /* epitrackerUITestsLaunchTests.swift */,
+			);
+			path = epitrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA4227E2F97842C001980D1 /* epitracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA422A32F97842F001980D1 /* Build configuration list for PBXNativeTarget "epitracker" */;
+			buildPhases = (
+				ACA4227B2F97842C001980D1 /* Sources */,
+				ACA4227C2F97842C001980D1 /* Frameworks */,
+				ACA4227D2F97842C001980D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = epitracker;
+			productName = epitracker;
+			productReference = ACA4227F2F97842C001980D1 /* epitracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA4228E2F97842F001980D1 /* epitrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA422A62F97842F001980D1 /* Build configuration list for PBXNativeTarget "epitrackerTests" */;
+			buildPhases = (
+				ACA4228B2F97842F001980D1 /* Sources */,
+				ACA4228C2F97842F001980D1 /* Frameworks */,
+				ACA4228D2F97842F001980D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA422912F97842F001980D1 /* PBXTargetDependency */,
+			);
+			name = epitrackerTests;
+			productName = epitrackerTests;
+			productReference = ACA4228F2F97842F001980D1 /* epitrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACA422982F97842F001980D1 /* epitrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA422A92F97842F001980D1 /* Build configuration list for PBXNativeTarget "epitrackerUITests" */;
+			buildPhases = (
+				ACA422952F97842F001980D1 /* Sources */,
+				ACA422962F97842F001980D1 /* Frameworks */,
+				ACA422972F97842F001980D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4229B2F97842F001980D1 /* PBXTargetDependency */,
+			);
+			name = epitrackerUITests;
+			productName = epitrackerUITests;
+			productReference = ACA422992F97842F001980D1 /* epitrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA422772F97842C001980D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					ACA4227E2F97842C001980D1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					ACA4228E2F97842F001980D1 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = ACA4227E2F97842C001980D1;
+					};
+					ACA422982F97842F001980D1 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = ACA4227E2F97842C001980D1;
+					};
+				};
+			};
+			buildConfigurationList = ACA4227A2F97842C001980D1 /* Build configuration list for PBXProject "epitracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA422762F97842C001980D1;
+			productRefGroup = ACA422802F97842C001980D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA4227E2F97842C001980D1 /* epitracker */,
+				ACA4228E2F97842F001980D1 /* epitrackerTests */,
+				ACA422982F97842F001980D1 /* epitrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA4227D2F97842C001980D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4228A2F97842E001980D1 /* Preview Assets.xcassets in Resources */,
+				ACA422872F97842E001980D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4228D2F97842F001980D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA422972F97842F001980D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA4227B2F97842C001980D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA422852F97842C001980D1 /* ContentView.swift in Sources */,
+				ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4228B2F97842F001980D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA422942F97842F001980D1 /* epitrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA422952F97842F001980D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA422A02F97842F001980D1 /* epitrackerUITestsLaunchTests.swift in Sources */,
+				ACA4229E2F97842F001980D1 /* epitrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA422912F97842F001980D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4227E2F97842C001980D1 /* epitracker */;
+			targetProxy = ACA422902F97842F001980D1 /* PBXContainerItemProxy */;
+		};
+		ACA4229B2F97842F001980D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4227E2F97842C001980D1 /* epitracker */;
+			targetProxy = ACA4229A2F97842F001980D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACA422A12F97842F001980D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACA422A22F97842F001980D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA422A42F97842F001980D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"epitracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.epitracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACA422A52F97842F001980D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"epitracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.epitracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACA422A72F97842F001980D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.epitrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/epitracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/epitracker";
+			};
+			name = Debug;
+		};
+		ACA422A82F97842F001980D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.epitrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/epitracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/epitracker";
+			};
+			name = Release;
+		};
+		ACA422AA2F97842F001980D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.epitrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = epitracker;
+			};
+			name = Debug;
+		};
+		ACA422AB2F97842F001980D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.epita.epitrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = epitracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA4227A2F97842C001980D1 /* Build configuration list for PBXProject "epitracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA422A12F97842F001980D1 /* Debug */,
+				ACA422A22F97842F001980D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA422A32F97842F001980D1 /* Build configuration list for PBXNativeTarget "epitracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA422A42F97842F001980D1 /* Debug */,
+				ACA422A52F97842F001980D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA422A62F97842F001980D1 /* Build configuration list for PBXNativeTarget "epitrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA422A72F97842F001980D1 /* Debug */,
+				ACA422A82F97842F001980D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA422A92F97842F001980D1 /* Build configuration list for PBXNativeTarget "epitrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA422AA2F97842F001980D1 /* Debug */,
+				ACA422AB2F97842F001980D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA422772F97842C001980D1 /* Project object */;
+}
