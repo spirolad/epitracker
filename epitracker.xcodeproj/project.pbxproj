@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC9AEE362F9B55BC00C87627 /* StudentManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE352F9B55BC00C87627 /* StudentManagementView.swift */; };
+		AC9AEE382F9B568600C87627 /* AddCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE372F9B568600C87627 /* AddCourseView.swift */; };
+		AC9AEE3B2F9B5D3500C87627 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE3A2F9B5D3500C87627 /* SupabaseManager.swift */; };
+		AC9AEE3E2F9B5FE200C87627 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = AC9AEE3D2F9B5FE200C87627 /* Auth */; };
+		AC9AEE402F9B5FE200C87627 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = AC9AEE3F2F9B5FE200C87627 /* Functions */; };
+		AC9AEE422F9B5FE200C87627 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = AC9AEE412F9B5FE200C87627 /* PostgREST */; };
+		AC9AEE442F9B5FE200C87627 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = AC9AEE432F9B5FE200C87627 /* Realtime */; };
+		AC9AEE462F9B5FE200C87627 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = AC9AEE452F9B5FE200C87627 /* Storage */; };
+		AC9AEE492F9B613200C87627 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = AC9AEE482F9B613200C87627 /* Supabase */; };
+		AC9AEE4B2F9B618900C87627 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE4A2F9B618900C87627 /* AuthService.swift */; };
+		AC9AEE4D2F9B628F00C87627 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE4C2F9B628F00C87627 /* LoginViewModel.swift */; };
+		AC9AEE512F9B646D00C87627 /* AddCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE502F9B646D00C87627 /* AddCourseViewModel.swift */; };
 		ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422822F97842C001980D1 /* epitrackerApp.swift */; };
-		ACA422852F97842C001980D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422842F97842C001980D1 /* ContentView.swift */; };
 		ACA422872F97842E001980D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA422862F97842E001980D1 /* Assets.xcassets */; };
 		ACA4228A2F97842E001980D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA422892F97842E001980D1 /* Preview Assets.xcassets */; };
 		ACA422942F97842F001980D1 /* epitrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422932F97842F001980D1 /* epitrackerTests.swift */; };
@@ -37,9 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC9AEE352F9B55BC00C87627 /* StudentManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentManagementView.swift; sourceTree = "<group>"; };
+		AC9AEE372F9B568600C87627 /* AddCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseView.swift; sourceTree = "<group>"; };
+		AC9AEE392F9B5A4900C87627 /* init.sql.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = init.sql.md; sourceTree = "<group>"; };
+		AC9AEE3A2F9B5D3500C87627 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		AC9AEE4A2F9B618900C87627 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AC9AEE4C2F9B628F00C87627 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AC9AEE502F9B646D00C87627 /* AddCourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewModel.swift; sourceTree = "<group>"; };
 		ACA4227F2F97842C001980D1 /* epitracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epitracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA422822F97842C001980D1 /* epitrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerApp.swift; sourceTree = "<group>"; };
-		ACA422842F97842C001980D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACA422862F97842E001980D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA422892F97842E001980D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACA4228F2F97842F001980D1 /* epitrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = epitrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +74,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9AEE422F9B5FE200C87627 /* PostgREST in Frameworks */,
+				AC9AEE402F9B5FE200C87627 /* Functions in Frameworks */,
+				AC9AEE492F9B613200C87627 /* Supabase in Frameworks */,
+				AC9AEE3E2F9B5FE200C87627 /* Auth in Frameworks */,
+				AC9AEE462F9B5FE200C87627 /* Storage in Frameworks */,
+				AC9AEE442F9B5FE200C87627 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,13 +100,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC9AEE472F9B613200C87627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC9AEE4E2F9B642800C87627 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC9AEE372F9B568600C87627 /* AddCourseView.swift */,
+				AC9AEE352F9B55BC00C87627 /* StudentManagementView.swift */,
+				ACA422B02F9B51A9001980D1 /* ApprenantView.swift */,
+				ACA422AC2F9B5144001980D1 /* LoginView.swift */,
+				ACA422AE2F9B517F001980D1 /* AdminPanelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC9AEE4F2F9B644B00C87627 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC9AEE4C2F9B628F00C87627 /* LoginViewModel.swift */,
+				AC9AEE502F9B646D00C87627 /* AddCourseViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ACA422762F97842C001980D1 = {
 			isa = PBXGroup;
 			children = (
+				AC9AEE4A2F9B618900C87627 /* AuthService.swift */,
 				ACA422812F97842C001980D1 /* epitracker */,
 				ACA422922F97842F001980D1 /* epitrackerTests */,
 				ACA4229C2F97842F001980D1 /* epitrackerUITests */,
 				ACA422802F97842C001980D1 /* Products */,
+				AC9AEE472F9B613200C87627 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,13 +153,13 @@
 		ACA422812F97842C001980D1 /* epitracker */ = {
 			isa = PBXGroup;
 			children = (
+				AC9AEE4F2F9B644B00C87627 /* Model */,
+				AC9AEE4E2F9B642800C87627 /* View */,
 				ACA422822F97842C001980D1 /* epitrackerApp.swift */,
-				ACA422842F97842C001980D1 /* ContentView.swift */,
 				ACA422862F97842E001980D1 /* Assets.xcassets */,
 				ACA422882F97842E001980D1 /* Preview Content */,
-				ACA422AC2F9B5144001980D1 /* LoginView.swift */,
-				ACA422AE2F9B517F001980D1 /* AdminPanelView.swift */,
-				ACA422B02F9B51A9001980D1 /* ApprenantView.swift */,
+				AC9AEE392F9B5A4900C87627 /* init.sql.md */,
+				AC9AEE3A2F9B5D3500C87627 /* SupabaseManager.swift */,
 			);
 			path = epitracker;
 			sourceTree = "<group>";
@@ -152,6 +205,14 @@
 			dependencies = (
 			);
 			name = epitracker;
+			packageProductDependencies = (
+				AC9AEE3D2F9B5FE200C87627 /* Auth */,
+				AC9AEE3F2F9B5FE200C87627 /* Functions */,
+				AC9AEE412F9B5FE200C87627 /* PostgREST */,
+				AC9AEE432F9B5FE200C87627 /* Realtime */,
+				AC9AEE452F9B5FE200C87627 /* Storage */,
+				AC9AEE482F9B613200C87627 /* Supabase */,
+			);
 			productName = epitracker;
 			productReference = ACA4227F2F97842C001980D1 /* epitracker.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +285,9 @@
 				Base,
 			);
 			mainGroup = ACA422762F97842C001980D1;
+			packageReferences = (
+				AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = ACA422802F97842C001980D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,10 +331,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA422AD2F9B5144001980D1 /* LoginView.swift in Sources */,
+				AC9AEE362F9B55BC00C87627 /* StudentManagementView.swift in Sources */,
 				ACA422B12F9B51A9001980D1 /* ApprenantView.swift in Sources */,
-				ACA422852F97842C001980D1 /* ContentView.swift in Sources */,
+				AC9AEE4B2F9B618900C87627 /* AuthService.swift in Sources */,
 				ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */,
+				AC9AEE382F9B568600C87627 /* AddCourseView.swift in Sources */,
 				ACA422AF2F9B517F001980D1 /* AdminPanelView.swift in Sources */,
+				AC9AEE512F9B646D00C87627 /* AddCourseViewModel.swift in Sources */,
+				AC9AEE4D2F9B628F00C87627 /* LoginViewModel.swift in Sources */,
+				AC9AEE3B2F9B5D3500C87627 /* SupabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +663,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC9AEE3D2F9B5FE200C87627 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		AC9AEE3F2F9B5FE200C87627 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		AC9AEE412F9B5FE200C87627 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		AC9AEE432F9B5FE200C87627 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		AC9AEE452F9B5FE200C87627 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		AC9AEE482F9B613200C87627 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC9AEE3C2F9B5F8F00C87627 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACA422772F97842C001980D1 /* Project object */;
 }
