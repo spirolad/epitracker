@@ -14,6 +14,9 @@
 		ACA422942F97842F001980D1 /* epitrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422932F97842F001980D1 /* epitrackerTests.swift */; };
 		ACA4229E2F97842F001980D1 /* epitrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4229D2F97842F001980D1 /* epitrackerUITests.swift */; };
 		ACA422A02F97842F001980D1 /* epitrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4229F2F97842F001980D1 /* epitrackerUITestsLaunchTests.swift */; };
+		ACA422AD2F9B5144001980D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422AC2F9B5144001980D1 /* LoginView.swift */; };
+		ACA422AF2F9B517F001980D1 /* AdminPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422AE2F9B517F001980D1 /* AdminPanelView.swift */; };
+		ACA422B12F9B51A9001980D1 /* ApprenantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422B02F9B51A9001980D1 /* ApprenantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		ACA422992F97842F001980D1 /* epitrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = epitrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA4229D2F97842F001980D1 /* epitrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerUITests.swift; sourceTree = "<group>"; };
 		ACA4229F2F97842F001980D1 /* epitrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACA422AC2F9B5144001980D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ACA422AE2F9B517F001980D1 /* AdminPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelView.swift; sourceTree = "<group>"; };
+		ACA422B02F9B51A9001980D1 /* ApprenantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprenantView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				ACA422842F97842C001980D1 /* ContentView.swift */,
 				ACA422862F97842E001980D1 /* Assets.xcassets */,
 				ACA422882F97842E001980D1 /* Preview Content */,
+				ACA422AC2F9B5144001980D1 /* LoginView.swift */,
+				ACA422AE2F9B517F001980D1 /* AdminPanelView.swift */,
+				ACA422B02F9B51A9001980D1 /* ApprenantView.swift */,
 			);
 			path = epitracker;
 			sourceTree = "<group>";
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA422AD2F9B5144001980D1 /* LoginView.swift in Sources */,
+				ACA422B12F9B51A9001980D1 /* ApprenantView.swift in Sources */,
 				ACA422852F97842C001980D1 /* ContentView.swift in Sources */,
 				ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */,
+				ACA422AF2F9B517F001980D1 /* AdminPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
