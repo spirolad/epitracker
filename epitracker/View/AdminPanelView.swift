@@ -7,30 +7,53 @@
 
 import SwiftUI
 
-struct AdminPanelView: View {
-    @State private var showingAddCourse = false
+import SwiftUI
 
+struct AdminPanelView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        List {
-            Section("Gestion") {
-                Button(action: { showingAddCourse.toggle() }) {
-                    Label("Ajouter un cours", systemImage: "plus.circle.fill")
+        NavigationStack {
+            List {
+                Section(header: Text("Calendrier & Cours")) {
+                    NavigationLink(destination: AdminCourseListView()) {
+                        Label("Liste des cours", systemImage: "calendar.badge.plus")
+                    }
                 }
-                NavigationLink("Gérer les apprenants", destination: StudentManagementView())
+                
+                Section(header: Text("Utilisateurs")) {
+                    NavigationLink(destination: StudentListView()) {
+                        Label("Liste des étudiants", systemImage: "person.2.fill")
+                    }
+                }
+                                Section(header: Text("Infrastructure")) {
+                                    NavigationLink(destination: CheckpointListView()) {
+                                        Label {
+                                            VStack(alignment: .leading) {
+                                                Text("Bornes QR des salles")
+                                                Text("Générer les QR à imprimer").font(.caption2).foregroundColor(.secondary)
+                                            }
+                                        } icon: {
+                                            Image(systemName: "qrcode.viewfinder")
+                                                .foregroundColor(.purple)
+                                        }
+                                    }
+                                }
             }
-            
-            Section("Consultation") {
-                NavigationLink("Liste des présences", destination: Text("Historique..."))
-                NavigationLink("Liste des cours", destination: AdminCourseListView())
+            .navigationTitle("Dashboard Admin")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Déconnexion") { dismiss() }.foregroundColor(.red)
+                }
             }
-        }
-        .navigationTitle("Dashboard Admin")
-        .sheet(isPresented: $showingAddCourse) {
-            AddCourseView()
         }
     }
 }
 
+// Pour la preview
+#Preview {
+    AdminPanelView()
+}
 #Preview {
     AdminPanelView()
 }

@@ -22,6 +22,12 @@
 		AC9AEE532F9B66F100C87627 /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE522F9B66F100C87627 /* CourseListViewModel.swift */; };
 		AC9AEE552F9B670E00C87627 /* AdminCourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE542F9B670E00C87627 /* AdminCourseListView.swift */; };
 		AC9AEE572F9B681600C87627 /* EditCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE562F9B681600C87627 /* EditCourseView.swift */; };
+		AC9AEE592F9B6CC100C87627 /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE582F9B6CC100C87627 /* StudentViewModel.swift */; };
+		AC9AEE5B2F9B6CF200C87627 /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE5A2F9B6CF200C87627 /* AddStudentView.swift */; };
+		AC9AEE5D2F9B6D2200C87627 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE5C2F9B6D2200C87627 /* StudentListView.swift */; };
+		AC9AEE602F9B787700C87627 /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE5F2F9B787700C87627 /* QRCodeService.swift */; };
+		AC9AEE652F9B79C500C87627 /* CheckpointListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE642F9B79C500C87627 /* CheckpointListView.swift */; };
+		AC9AEE672F9B79F900C87627 /* AddCheckpointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AEE662F9B79F900C87627 /* AddCheckpointView.swift */; };
 		ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA422822F97842C001980D1 /* epitrackerApp.swift */; };
 		ACA422872F97842E001980D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA422862F97842E001980D1 /* Assets.xcassets */; };
 		ACA4228A2F97842E001980D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA422892F97842E001980D1 /* Preview Assets.xcassets */; };
@@ -61,6 +67,12 @@
 		AC9AEE522F9B66F100C87627 /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
 		AC9AEE542F9B670E00C87627 /* AdminCourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCourseListView.swift; sourceTree = "<group>"; };
 		AC9AEE562F9B681600C87627 /* EditCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCourseView.swift; sourceTree = "<group>"; };
+		AC9AEE582F9B6CC100C87627 /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
+		AC9AEE5A2F9B6CF200C87627 /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
+		AC9AEE5C2F9B6D2200C87627 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
+		AC9AEE5F2F9B787700C87627 /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
+		AC9AEE642F9B79C500C87627 /* CheckpointListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckpointListView.swift; sourceTree = "<group>"; };
+		AC9AEE662F9B79F900C87627 /* AddCheckpointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCheckpointView.swift; sourceTree = "<group>"; };
 		ACA4227F2F97842C001980D1 /* epitracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epitracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA422822F97842C001980D1 /* epitrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = epitrackerApp.swift; sourceTree = "<group>"; };
 		ACA422862F97842E001980D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +135,10 @@
 				ACA422AE2F9B517F001980D1 /* AdminPanelView.swift */,
 				AC9AEE542F9B670E00C87627 /* AdminCourseListView.swift */,
 				AC9AEE562F9B681600C87627 /* EditCourseView.swift */,
+				AC9AEE5A2F9B6CF200C87627 /* AddStudentView.swift */,
+				AC9AEE5C2F9B6D2200C87627 /* StudentListView.swift */,
+				AC9AEE642F9B79C500C87627 /* CheckpointListView.swift */,
+				AC9AEE662F9B79F900C87627 /* AddCheckpointView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,8 +149,17 @@
 				AC9AEE4C2F9B628F00C87627 /* LoginViewModel.swift */,
 				AC9AEE502F9B646D00C87627 /* AddCourseViewModel.swift */,
 				AC9AEE522F9B66F100C87627 /* CourseListViewModel.swift */,
+				AC9AEE582F9B6CC100C87627 /* StudentViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC9AEE5E2F9B785A00C87627 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC9AEE5F2F9B787700C87627 /* QRCodeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		ACA422762F97842C001980D1 = {
@@ -162,6 +187,7 @@
 		ACA422812F97842C001980D1 /* epitracker */ = {
 			isa = PBXGroup;
 			children = (
+				AC9AEE5E2F9B785A00C87627 /* Service */,
 				AC9AEE4F2F9B644B00C87627 /* Model */,
 				AC9AEE4E2F9B642800C87627 /* View */,
 				ACA422822F97842C001980D1 /* epitrackerApp.swift */,
@@ -340,17 +366,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA422AD2F9B5144001980D1 /* LoginView.swift in Sources */,
+				AC9AEE602F9B787700C87627 /* QRCodeService.swift in Sources */,
 				AC9AEE362F9B55BC00C87627 /* StudentManagementView.swift in Sources */,
 				ACA422B12F9B51A9001980D1 /* ApprenantView.swift in Sources */,
 				AC9AEE4B2F9B618900C87627 /* AuthService.swift in Sources */,
 				ACA422832F97842C001980D1 /* epitrackerApp.swift in Sources */,
+				AC9AEE652F9B79C500C87627 /* CheckpointListView.swift in Sources */,
 				AC9AEE382F9B568600C87627 /* AddCourseView.swift in Sources */,
 				ACA422AF2F9B517F001980D1 /* AdminPanelView.swift in Sources */,
+				AC9AEE5B2F9B6CF200C87627 /* AddStudentView.swift in Sources */,
+				AC9AEE672F9B79F900C87627 /* AddCheckpointView.swift in Sources */,
 				AC9AEE532F9B66F100C87627 /* CourseListViewModel.swift in Sources */,
 				AC9AEE512F9B646D00C87627 /* AddCourseViewModel.swift in Sources */,
 				AC9AEE552F9B670E00C87627 /* AdminCourseListView.swift in Sources */,
 				AC9AEE4D2F9B628F00C87627 /* LoginViewModel.swift in Sources */,
 				AC9AEE572F9B681600C87627 /* EditCourseView.swift in Sources */,
+				AC9AEE592F9B6CC100C87627 /* StudentViewModel.swift in Sources */,
+				AC9AEE5D2F9B6D2200C87627 /* StudentListView.swift in Sources */,
 				AC9AEE3B2F9B5D3500C87627 /* SupabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

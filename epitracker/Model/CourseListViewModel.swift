@@ -27,21 +27,19 @@ class CourseListViewModel: ObservableObject {
     }
 
     @MainActor
-    func deleteCourse(at offsets: IndexSet) async {
-        for index in offsets {
-            let course = courses[index]
-            do {
-                try await SupabaseManager.shared.client
-                    .from("courses")
-                    .delete()
-                    .eq("id", value: course.id.description)
-                    .execute()
-                
-                courses.remove(at: index)
-                print("✅ Cours \(course.id) supprimé")
-            } catch {
-                print("❌ Erreur suppression: \(error)")
-            }
+    func deleteCourse(id: Int64) async {
+        do {
+            try await SupabaseManager.shared.client
+                .from("courses")
+                .delete()
+                .eq("id", value: id.description) // On utilise .description pour le type Long
+                .execute()
+            
+            // On met à jour la liste locale pour que l'interface réagisse
+            self.courses.removeAll { $0.id == id }
+            print("✅ Cours supprimé")
+        } catch {
+            print("❌ Erreur suppression: \(error)")
         }
     }
 }

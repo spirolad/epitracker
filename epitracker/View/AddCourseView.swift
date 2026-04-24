@@ -1,71 +1,78 @@
 import SwiftUI
+import Supabase
 
 struct AddCourseView: View {
-    @StateObject var viewModel = AddCourseViewModel()
     @Environment(\.dismiss) var dismiss
     
-    // Champs du formulaire
+    var onComplete: () -> Void
+    
     @State private var courseName = ""
     @State private var startDate = Date()
-    @State private var endDate = Date().addingTimeInterval(3600 * 2) // +2h par défaut
-    
-    // Coordonnées GPS (on verra plus tard pour les récupérer auto)
+    @State private var endDate = Date().addingTimeInterval(3600 * 2)
     @State private var latitude = 48.8566
     @State private var longitude = 2.3522
+    @State private var isLoading = false
 
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("Informations du cours")) {
-                    TextField("Titre (ex: Cours de Swift)", text: $courseName)
-                }
-                
-                Section(header: Text("Horaires de validité")) {
+                Section("Informations") {
+                    TextField("Nom du cours", text: $courseName)
                     DatePicker("Début", selection: $startDate)
                     DatePicker("Fin", selection: $endDate)
                 }
                 
-                Section(header: Text("Localisation du cours")) {
-                    HStack {
-                        Text("Lat:")
-                        TextField("Latitude", value: $latitude, format: .number)
-                            .keyboardType(.decimalPad)
-                    }
-                    HStack {
-                        Text("Lon:")
-                        TextField("Longitude", value: $longitude, format: .number)
-                            .keyboardType(.decimalPad)
-                    }
-                    Button("Ma position actuelle") {
-                        // TODO: CoreLocation pour remplir lat/lon
-                    }
-                }
-                
-                if !viewModel.message.isEmpty {
-                    Text(viewModel.message).foregroundColor(.red).font(.caption)
+                Section("Position") {
+                    TextField("Lat", value: $latitude, format: .number)
+                    TextField("Lon", value: $longitude, format: .number)
                 }
                 
                 Button(action: {
-                    viewModel.saveCourse(name: courseName, lat: latitude, lon: longitude, start: startDate, end: endDate) {
-                        dismiss() // Ferme la vue après succès
-                    }
+                    Task { await saveCourse() }
                 }) {
-                    if viewModel.isLoading {
+                    if isLoading {
                         ProgressView()
                     } else {
-                        Text("Enregistrer le cours")
-                            .frame(maxWidth: .infinity)
-                            .bold()
+                        Text("Créer le cours").frame(maxWidth: .infinity).bold()
                     }
                 }
-                .disabled(courseName.isEmpty || viewModel.isLoading)
+                .disabled(courseName.isEmpty)
             }
-            .navigationTitle("Nouveau Cours")
+            .navigationTitle("Nouveau cours")
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Annuler") { dismiss() }
-                }
+                Button("Annuler") { dismiss() }
             }
+        }
+    }
+
+    func saveCourse() async {
+        self.isLoading = true
+        let formatter = ISO8601DateFormatter()
+        
+        let newCourse: [String: AnyJSON] = [
+            "name": .string(courseName),
+            "latitude": .double(latitude),
+            "longitude": .double(longitude),
+            "start_at": .string(formatter.string(from: startDate)),
+            "end_at": .string(formatter.string(from: endDate))
+        ]
+        
+        do {
+            try await SupabaseManager.shared.client
+                .from("courses")
+                .insert(newCourse)
+                .execute()
+            
+            DispatchQueue.main.async {
+                self.isLoading = false
+                // 1. On appelle le refresh de la liste parente
+                onComplete()
+                // 2. On ferme la fenêtre
+                dismiss()
+            }
+        } catch {
+            print("❌ Erreur insert: \(error)")
+            self.isLoading = false
         }
     }
 }

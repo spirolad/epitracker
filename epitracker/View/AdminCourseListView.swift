@@ -7,63 +7,44 @@
 
 import SwiftUI
 
-
-
 struct AdminCourseListView: View {
     @StateObject var viewModel = CourseListViewModel()
     @State private var courseToEdit: Course?
+    @State private var isShowingAdd = false
 
     var body: some View {
         List {
-            if viewModel.isLoading {
-                ProgressView("Chargement des cours...")
-            }
-            
             ForEach(viewModel.courses) { course in
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(course.name)
-                        .font(.headline)
-                    
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text(course.startAt.formatted(date: .abbreviated, time: .shortened))
-                    }
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                VStack(alignment: .leading) {
+                    Text(course.name).font(.headline)
+                    Text("Début: \(course.startAt.formatted(date: .abbreviated, time: .shortened))").font(.caption)
                 }
-                .swipeActions(edge: .trailing) {
+                .swipeActions {
                     Button(role: .destructive) {
-                        Task { await viewModel.deleteCourse(at: [viewModel.courses.firstIndex(where: { $0.id == course.id })!]) }
-                    } label: {
-                        Label("Supprimer", systemImage: "trash")
-                    }
+                        Task { await viewModel.deleteCourse(id: course.id) }
+                    } label: { Label("Supprimer", systemImage: "trash") }
                     
-                    // BOUTON MODIFIER
-                    Button {
-                        courseToEdit = course
-                    } label: {
-                        Label("Modifier", systemImage: "pencil")
-                    }
-                    .tint(.orange)
+                    Button { courseToEdit = course } label: { Label("Modifier", systemImage: "pencil") }.tint(.orange)
                 }
             }
         }
-        .navigationTitle("Cours à venir")
-        .refreshable {
-            await viewModel.fetchFutureCourses()
-        }
-        .onAppear {
-            Task { await viewModel.fetchFutureCourses() }
+        .navigationTitle("Cours")
+        .toolbar { Button { isShowingAdd = true } label: { Image(systemName: "plus") } }
+        .refreshable { await viewModel.fetchFutureCourses() }
+        .onAppear { Task { await viewModel.fetchFutureCourses() } }
+        .sheet(isPresented: $isShowingAdd) {
+            AddCourseView(onComplete: {
+                Task {
+                    await viewModel.fetchFutureCourses()
+                }
+            })
         }
         .sheet(item: $courseToEdit) { course in
-                    EditCourseView(course: course, onComplete: {
-                        Task {
-                            await viewModel.fetchFutureCourses()
-                        }
-                    })
-                }
+            EditCourseView(course: course) { Task { await viewModel.fetchFutureCourses() } }
+        }
     }
 }
+
 #Preview {
     AdminCourseListView()
 }
