@@ -21,6 +21,7 @@ struct AdminPanelView: View {
             
             Section("Consultation") {
                 NavigationLink("Liste des présences", destination: Text("Historique..."))
+                NavigationLink("Liste des cours", destination: AdminCourseListView())
             }
         }
         .navigationTitle("Dashboard Admin")

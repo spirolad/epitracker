@@ -10,12 +10,19 @@ import SwiftUI
 import Foundation
 import CoreLocation
 
-struct Course: Identifiable {
-    var id = UUID().uuidString
+struct Course: Codable, Identifiable, Hashable {
+    let id: Int64
     var name: String
     var latitude: Double
     var longitude: Double
-    var date: Date
+    var startAt: Date
+    var endAt: Date
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, latitude, longitude
+        case startAt = "start_at"
+        case endAt = "end_at"
+    }
 }
 
 struct Student: Identifiable {
